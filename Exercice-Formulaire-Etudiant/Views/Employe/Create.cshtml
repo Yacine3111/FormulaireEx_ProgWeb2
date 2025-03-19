@@ -1,0 +1,36 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+
+@{
+    @model Exercice_Formulaire_Etudiant.ViewModels.EmployeIndexVM;
+}
+<h1>Formulaire de création</h1>
+
+<form asp-action="Create" method="post">
+    <fieldset>
+        <label asp-for="Name" class="form-label"></label>
+        <input asp-for="Name" class="form-control"/>
+
+        <label asp-for="age" class="form-label"></label>
+        <input asp-for="age" class="form-control" />
+
+        <label asp-for="dateEmbauche" class="form-label"></label>
+        <input asp-for="dateEmbauche" class="form-control" />
+
+        <label asp-for="annualSalary" class="form-label"></label>
+        <input asp-for="annualSalary" class="form-control" />
+
+        <input asp-for="actualEmploye"/>
+        <label asp-for="actualEmploye" ></label>
+
+        <label asp-for="paysId" class="form-label"></label>
+        <input asp-for="paysId" class="form-control" />
+    
+        <label asp-for="departementId" class="form-label"></label>
+        <input asp-for="departementId" class="form-control" />
+
+        <button type="submit" class="btn btn-primary">Créer</button>
+    </fieldset>
+    
+</form>
